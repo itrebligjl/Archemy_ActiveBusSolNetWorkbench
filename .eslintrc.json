@@ -9,6 +9,25 @@
     "no-console": "off",
     "comma-dangle": "off",
     "react/jsx-filename-extension": "off",
-    "linebreak-style": 0
-  }
+    "linebreak-style": 0,
+    "no-param-reassign": [2, {"props": false}],
+    "no-underscore-dangle": [2, { "allow": ["_id"] }],
+    "prefer-destructuring": ["error", {"object": false, "array": false}],
+     "jsx-a11y/label-has-associated-control": [ 2, {
+       "labelComponents": ["label"],
+       "labelAttributes": ["htmlFor"],
+       "controlComponents": ["input"],
+       "required": {
+         "some": [ "nesting", "id"  ]
+       }
+     }],
+     "jsx-a11y/label-has-for": [ "error", {
+       "required": {
+         "some": [ "nesting", "id"  ]
+         }
+      }],
+      "react/prop-types": [
+        "enabled",
+          { "ignore": "ignore", "customValidators": "customValidator" }]
+    }
 }
